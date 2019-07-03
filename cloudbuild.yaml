@@ -7,3 +7,5 @@ steps:
       docker-compose up -d
       sleep 15
       curl http://nginx
+      curl http://localhost:8080 || echo "Won't work"
+      curl http://127.0.0.1:8080 || echo "Won't work"
