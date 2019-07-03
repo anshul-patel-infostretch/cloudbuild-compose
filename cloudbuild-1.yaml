@@ -7,7 +7,6 @@ steps:
   args:
     - '-cex'
     - |
-      docker-compose up -d
       curl http://nginx
       curl http://localhost:8080 || echo "Won't work"
       curl http://127.0.0.1:8080 || echo "Won't work"
