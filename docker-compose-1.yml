@@ -4,9 +4,3 @@ services:
     image: "nginx"
     ports:
       - "8080:80"
-    networks:
-      - cloudbuild
-
-networks:
-  cloudbuild:
-    external: true
