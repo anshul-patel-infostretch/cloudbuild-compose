@@ -5,4 +5,5 @@ steps:
     - '-cex'
     - |
       docker-compose up -d
-      curl http://nginx:8080
+      sleep 15
+      curl http://nginx
