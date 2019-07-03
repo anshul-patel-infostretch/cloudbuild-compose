@@ -1,0 +1,8 @@
+steps:
+- name: 'anshulpatel25/gcp:latest'
+  entrypoint: 'bash'
+  args:
+    - '-cex'
+    - |
+      docker-compose up -d
+      curl http://nginx:8080
