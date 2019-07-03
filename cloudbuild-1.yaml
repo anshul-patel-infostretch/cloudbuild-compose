@@ -1,6 +1,6 @@
 steps:
 - name: 'docker/compose:1.24.1'
-  args: ["up", "-d"]
+  args: ["-f", "docker-compose-1.yml", "up", "-d"]
 
 - name: 'anshulpatel25/gcp:latest'
   entrypoint: 'bash'
