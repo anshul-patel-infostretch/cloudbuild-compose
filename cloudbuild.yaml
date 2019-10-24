@@ -4,4 +4,4 @@ steps:
   args:
     - '-cex'
     - |
-      env
+      env | sort
